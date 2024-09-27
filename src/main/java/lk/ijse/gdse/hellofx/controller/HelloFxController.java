@@ -11,7 +11,6 @@ package lk.ijse.gdse.hellofx.controller;
  * --------------------------------------------
  **/
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -20,22 +19,19 @@ import javafx.scene.control.TextField;
 
 public class HelloFxController {
 
-    @FXML
-    private TextField txtSample;
-
-    @FXML
-    private Button btnSample;
 
     @FXML
     private Label lblSample;
 
     @FXML
-    void btnSampleOnAction(ActionEvent event) {
+    private TextField txtSample;
+
+    public void btnSampleOnAction(ActionEvent actionEvent) {
         String text = txtSample.getText();
 
         System.out.println(text);
+        System.out.println("clicked !");
 
         lblSample.setText(text);
     }
-
 }
